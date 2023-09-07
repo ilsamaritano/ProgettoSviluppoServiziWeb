@@ -12,7 +12,7 @@ I dati sono salvati su un Database MongoDB (non relazionale) attraverso un servi
 
 <i>database.service</i> è il servizio che effettua richieste HTTP GET e POST verso il database MongoDB.
 
-## Link a StackBlitz / Firebase
+## Link a StackBlitz / Firebase / AWS
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/progettossw-ilsamaritano)
 
