@@ -1,0 +1,16 @@
+<h2>Inserimento di un nuovo volume</h2>
+<div class="form">
+  <label>Autore: </label>
+  <input type="text" placeholder="Autore" #autore /><br />
+  <label>Titolo: </label>
+  <input type="text" placeholder="Titolo" #titolo /><br />
+  <label>Posizione: </label>
+  <input type="text" placeholder="Posizione" #posizione />
+  <div class="messaggio">{{ messaggio }}</div>
+</div>
+
+<button (click)="Inserisci(autore.value, titolo.value, posizione.value)">
+  Inserisci
+</button>
+<hr />
+<button (click)="Pulisci()">Torna alla home</button>

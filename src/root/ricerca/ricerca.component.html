@@ -1,0 +1,25 @@
+<ng-container *ngIf="bloccoRicerca; else bloccoDescrizione">
+  <h2>Ricerca per titolo, autore o posizione</h2>
+  <input
+    id="ricerca"
+    type="text"
+    placeholder="Effettua una ricerca"
+    (keyup)="RicercaSuInput($event)"
+  />
+  <p>{{ risultati }} corrispondenze</p>
+  <hr />
+  <button (click)="Pulisci()">Torna alla home</button>
+</ng-container>
+
+<ng-template #bloccoDescrizione>
+  <descrizione
+    [archivio]="archivio"
+    [vista]="vista"
+    (cambioVista)="Pulisci()"
+    [volumeTrovato]="volumeTrovato"
+    [indiceVolume]="indiceVolume"
+  >
+  </descrizione>
+  <hr />
+  <button (click)="Pulisci()">Torna alla home</button>
+</ng-template>

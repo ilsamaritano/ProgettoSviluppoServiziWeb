@@ -1,0 +1,26 @@
+<h2>Servizio biblioteca</h2>
+
+<div *ngIf="vista === 'homepage'">
+  <button (click)="CambiaVista('ricerca')">Ricerca</button><br />
+  <button (click)="CambiaVista('inserimento')">Inserimento</button>
+</div>
+
+<ng-container *ngIf="vista !== 'homepage'">
+  <div [ngSwitch]="vista">
+    <!-- Carica il componente corrispondente alla vista selezionata -->
+    <ng-container *ngSwitchCase="'inserimento'">
+      <inserimento
+        [vista]="vista"
+        (cambiaVista)="CambiaVista('homepage')"
+        [archivio]="archivio"
+      ></inserimento>
+    </ng-container>
+    <ng-container *ngSwitchCase="'ricerca'">
+      <ricerca
+        [vista]="vista"
+        (cambiaVista)="CambiaVista('homepage')"
+        [archivio]="archivio"
+      ></ricerca>
+    </ng-container>
+  </div>
+</ng-container>

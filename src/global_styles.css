@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Montserrat:wght@200;400;800&display=swap');
+h1,
+h2,
+h3,
+h4,
+div,
+p,
+label {
+  text-align: center;
+  font-weight: 400;
+}
+
+div {
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+
+button,
+input {
+  margin: 5px auto 0 auto;
+  display: block;
+}
+
+.form {
+  display: block;
+}
+body,
+button,
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}

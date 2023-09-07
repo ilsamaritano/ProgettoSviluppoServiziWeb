@@ -1,0 +1,26 @@
+<h2>Descrizione del libro selezionato</h2>
+<div class="desc">
+  <div><label>Posizione:</label> {{ volumeTrovato.posizione }}</div>
+  <div><label>Autore:</label> {{ volumeTrovato.autore }}</div>
+  <div><label>Titolo:</label> {{ volumeTrovato.titolo }}</div>
+</div>
+
+<ng-container *ngIf="volumeTrovato.nominativo === ''; else bloccoElse">
+  <h3>Prestito</h3>
+  <input
+    type="text"
+    placeholder="Inserisci nome"
+    #nome
+    (keyup.enter)="gestisciAzione(false, nome.value)"
+  /><br />
+  <p>Clicca invio per abilitare il prestito</p>
+  <h3>Rimozione</h3>
+  <button (click)="gestisciAzione(false)">Rimuovi</button>
+</ng-container>
+
+<ng-template #bloccoElse>
+  <div>
+    <label>Intestatario del prestito:</label>{{ volumeTrovato.nominativo }}
+  </div>
+  <button (click)="gestisciAzione(true)">Restituzione</button>
+</ng-template>

@@ -1,0 +1,11 @@
+p {
+  font-size: smaller;
+}
+.desc {
+  text-align: center;
+  display: block;
+}
+
+label {
+  font-weight: bold;
+}
