@@ -47,6 +47,7 @@ export class RicercaComponent {
     this.risultati = 0;
   }
 
+  // Gestisce la descrizione del libro singolo
   gestisciRisultatoSingolo(risultati: Volume[]): void {
     this.volumeTrovato = risultati[0];
     this.indiceVolume = this.archivio.inventario.indexOf(this.volumeTrovato);
