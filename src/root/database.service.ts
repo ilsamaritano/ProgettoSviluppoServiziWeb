@@ -12,7 +12,7 @@ export class ArchivioService {
 
   constructor() {}
 
-  // Ottieni dati tramite richiesta GET e trasforma AjaxResponse in stringa
+  // Ottieni dati tramite richiesta GET come una stringa
   public getData(): Observable<string> {
     return ajax({
       method: 'GET',
