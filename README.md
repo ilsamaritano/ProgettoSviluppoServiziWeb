@@ -16,6 +16,6 @@ I dati sono salvati su un Database MongoDB (non relazionale) attraverso un servi
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/progettossw-ilsamaritano)
 
-[Firebase ⚡️](https://progettossw-vincesamma.firebaseapp.com/?942314)
+[Firebase ⚡️](https://progettossw-vincesamma.firebaseapp.com)
 
 [Database AWS (chiave già impostata)⚡️](https://eu-central-1.aws.data.mongodb-api.com/app/kvaas-giwjg/endpoint/get?key=f91a18be)
