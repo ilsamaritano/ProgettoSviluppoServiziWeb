@@ -1,6 +1,6 @@
 h2 {
   font-weight: bolder;
 }
-div {
+div.bottoni {
   display: flex;
 }
