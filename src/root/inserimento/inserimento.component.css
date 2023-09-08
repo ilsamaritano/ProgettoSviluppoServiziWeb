@@ -2,3 +2,7 @@
   text-align: center;
   color: red;
 }
+
+div {
+  display: block;
+}
