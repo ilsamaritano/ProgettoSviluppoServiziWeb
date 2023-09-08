@@ -18,9 +18,7 @@ export class ArchivioService {
       method: 'GET',
       url: this.base + '/get?key=' + this.key,
       crossDomain: true,
-    }).pipe(
-      map((risposta: { response: any }) => risposta.response) //trasforma l'oggetto AjaxResponse in una stringa
-    );
+    }).pipe(map((risposta: { response: any }) => risposta.response));
   }
 
   // Invia i dati tramite POST
