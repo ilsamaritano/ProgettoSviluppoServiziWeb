@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { ajax, AjaxResponse } from 'rxjs/ajax';
+import { Observable, map } from 'rxjs';
+import { ajax, AjaxError, AjaxResponse } from 'rxjs/ajax';
 
 @Injectable({
   providedIn: 'root',
@@ -12,13 +12,13 @@ export class ArchivioService {
 
   constructor() {}
 
-  // Ottieni dati tramite richiesta GET
-  public getData(): Observable<any> {
+  // Ottieni dati tramite richiesta GET e trasforma AjaxResponse in stringa
+  public getData(): Observable<string> {
     return ajax({
       method: 'GET',
       url: this.base + '/get?key=' + this.key,
       crossDomain: true,
-    });
+    }).pipe(map((risposta: { response: any }) => risposta.response));
   }
 
   // Invia i dati tramite POST
