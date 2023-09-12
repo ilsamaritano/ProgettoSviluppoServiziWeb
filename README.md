@@ -1,5 +1,9 @@
 # Progetto Sviluppo dei Servizi Web (AA 2022/2023)
 
+Voto finale: 30 e lode.
+
+
+
 Questo progetto è un'applicazione Web sviluppata in <b>Angular 16</b> che funge da sistema di gestione per una biblioteca. Gli utenti possono utilizzare questa applicazione per cercare libri, prenderli in prestito, inserire nuovi libri nell'archivio e visualizzare le informazioni dei libri presenti nella collezione.
 
 ## Linguaggio di programmazione
